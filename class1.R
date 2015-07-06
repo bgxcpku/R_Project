@@ -37,6 +37,20 @@ FALSE*5
 2 == 3
 
 x <- c(1,2,3,4,5)
-?c()
+?c() #vector
 x+2
 sqrt(x)
+1:10
+x<-1:10
+x+c(1,2)
+length(x)
+seq(from=1, to=10, by=2)
+seq(1,10,2)
+?seq
+
+mean(x)
+apropos("mea")
+
+z<-c(1,2,NA,8,3,NA,3)
+mean(z)
+mean(z,na.rm=TRUE)
