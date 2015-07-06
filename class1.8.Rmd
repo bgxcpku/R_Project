@@ -1,0 +1,75 @@
+---
+title: "Untitled"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    number_sections: yes
+    toc: yes
+---
+
+# Header 1
+In here is all of the content in the first section. This is our openning paragraph. 
+
+Here is another paragraph.
+
+# Another Header 1
+This is another top header
+
+## header 2
+
+# lists
+
+## unordered list
+
+- Banana
+- Apple
+- Orange
+    - Navel
+    - Jaffa
+    - Tangerine
+- abc
+
+## Ordered Lists
+1. Le Trappe
+    1. Quad
+    1. Tripppel
+    1. Dubel
+1. Rochfort
+1. westmalle
+    - lagger
+    - bb
+1. Sapporo
+
+# font
+_this is italic_
+__this is bold__
+___this is italic and bold___
+
+# Math
+
+## Point Slope Form
+$$
+  y=mx+b
+$$
+
+## Average
+$$
+  \bar{x}=\frac{\sum_{i}^N x_i}{N}
+$$
+
+
+<!-- This is a comment -->
+
+# Tie for R
+```{r simple addition}
+1+1
+```
+
+```{r show-me-diamonds}
+library(ggplot2)
+data(diamonds)
+ggplot(diamonds,aes(x=carat,y=price,color=cut))+geom_point()
+```
+
+

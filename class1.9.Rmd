@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+output: ioslides_presentation
+---
+
+## This is my first slide
+This can be treated as a normal markdown document
+
+## Lists
+- Le Trappe
+- Delirium Tremens
+- Kwak
+- Le Choufe
+
+## Diamonds
+```{r show-graphs, echo=FALSE}
+library(ggplot2)
+data("diamonds")
+ggplot(diamonds,aes(x=carat,y=price,color=cut))+geom_point()
+```
+
+<div class='notes'>
+- Talk about diamonds
+- vamp for a Tittle
+</div>
+

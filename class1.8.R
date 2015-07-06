@@ -1,0 +1,10 @@
+install.packages('GGally')
+data(tips,package='reshape2')
+head(tips)
+library(ggplot2)
+ggplot(tips, aes(x=total_bill,y=tip))+geom_point()+geom_smooth()
+ggplot(tips, aes(x=total_bill,y=tip,color=sex))+geom_point()+geom_smooth()
+ggplot(tips, aes(x=total_bill,y=tip,color=sex))+geom_point()+facet_wrap(~day)
+pairs(tips)
+
+GGally::ggpairs(tips)
